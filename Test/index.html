@@ -3,22 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  
-  <div class = "gallery">
-    <div>
-      <span><img src="images/asseterror.png"></span>
-      <span><img src="images/asseterror.png"></span>
-      <span><img src="images/asseterror.png"></span>
+  <div class="gallery-wrap">
+    <img src="images/back.png" id="backBtn">
+    <div class = "gallery">
+      <div>
+        <span><img src="images/asseterror.png"></span>
+        <span><img src="images/asseterror.png"></span>
+        <span><img src="images/asseterror.png"></span>
+      </div>
+      <div>
+        <span><img src="images/asseterror.png"></span>
+        <span><img src="images/asseterror.png"></span>
+        <span><img src="images/asseterror.png"></span>
+      </div>
     </div>
-    <div>
-      <span><img src="images/asseterror.png"></span>
-      <span><img src="images/asseterror.png"></span>
-      <span><img src="images/asseterror.png"></span>
-    </div>
+    <img src="images/next.png" id="nextBtn">
   </div>
 
+  <script>
+    
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click", ()=>{
+      scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", ()=>{
+      scrollContainer.scrollLeft -= 900;
+    });
+    
+  </script>
 </body>
 </html>
