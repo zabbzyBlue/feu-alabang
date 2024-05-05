@@ -1,0 +1,485 @@
+
+
+/*General*/
+.button {
+  cursor: pointer;
+}
+
+.button:focus, .button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  caret-color: transparent;
+}
+
+/*Overlay & Popup*/
+/* Dark overlay styles */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  display: none; 
+
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 1000; 
+  display: none; 
+  width: 25vw;
+  height: 430px;
+ 
+}
+
+#adminh2 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+#adminqa {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.5vw;
+
+}
+
+#useroradmin {
+  position: relative;
+  top: 40px;
+  height: 150px;
+  display: flex;
+  width: 90%;
+  left: 17px;
+  justify-content: space-between;
+}
+
+#userqabtn {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150px;
+}
+
+
+
+
+#userqabtn-text {
+  font-size: 25px;
+  margin-top: 13px;
+  text-align: center;
+  padding-bottom: 21px;
+}
+
+#userqabtn-icon {
+  display: flex;
+  width: 100%;
+
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.3em;
+}
+
+#adminqabtn {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#adminqabtn-text {
+  font-size: 25px;
+  margin-top: 13px;
+  text-align: center;
+
+  padding-bottom: 21px;
+
+}
+
+#adminqabtn-btncon {
+  display: flex;
+  width: 100%;
+
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+#adminqabtn-icon {
+  display: flex;
+  height: 2.5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*homebar container*/
+
+.home-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.home-header {
+  width: 100%;
+  height: 87px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  border-left: none;
+  border-color: #f1ebeb;
+  border-right: none;
+  border-width: 0.5px;
+  background-color: #0bbab5;
+
+
+}
+
+/*Left Section*/
+.home-container1 {
+ display: flex;
+ margin-left: 30px;
+ 
+}
+.home-button {
+  padding: 0;
+  width: 131px;
+  height: 40px;
+  display: flex;
+  border-width: 0px;
+  border-radius: 0px;
+  caret-color: transparent;
+
+}
+.home-image1 {
+
+  width: 128px;
+  height: 49px;
+  object-fit: cover;
+  
+}
+
+.home-image2 {
+  display: none;
+}
+
+/*Right Section*/
+
+
+.home-container2 {
+  flex: 0 0 auto;
+  width: 530px;
+  height: 100%;
+  display: flex;
+  
+}
+
+#searchicon {
+  position: relative;
+  left: 10px; 
+}
+
+#searchfield {
+  height: 100%;
+  margin-top: -16px;
+  padding-left: 50px;
+}
+
+
+.buybtn {
+  width: 110px;
+  bottom: 0px;
+  height: 100%;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #c77fff;
+  caret-color: transparent;
+  
+}
+.buybtn-text {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+.sellbtn {
+  width: 110px;
+  bottom: 0px;
+  height: 100%;
+  align-self: center;
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #d2e406;
+  
+}
+.sellbtn-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.adminbtn {
+  width: 60px;
+  height:100%;
+  border: none;
+ 
+}
+
+.home-image3 {
+  margin-left: 7px;
+  width: 55px;
+}
+
+
+
+@media(max-width: 1200px) {
+
+  .home-header {
+    height: 70px;
+  }
+
+  .home-container2 {
+    width: 490px;
+  }  
+
+  .buybtn-text, .sellbtn-text{
+    font-size: 15px;
+  }
+
+  .buybtn, .sellbtn {
+    width: 90px;
+  }
+
+
+  
+}
+
+@media(max-width: 800px) {
+
+
+
+  .home-header {
+    height: 65px;
+    padding: var(--dl-space-space-unit);
+  }
+  
+  .home-button {
+    width: 100px;
+  }
+  
+  .home-container2 {
+    width: 430px;
+  }  
+  
+  .home-image3 {
+    width: 48px;
+  }
+  
+  .buybtn, .sellbtn {
+    width: 150px;
+  }
+  
+  .adminbtn {
+    width: 75px;
+  }
+}
+
+@media(max-width: 610px) {
+
+  /*Whole*/
+
+  .home-header {
+    height: 60px;
+    padding: var(--dl-space-space-unit);
+  }
+
+  /*Left Section*/
+
+
+  .home-button {
+    width: 50px;
+    height: 43px;
+   
+  }
+
+  .home-image1 {
+    display: none;
+    width: 90px;
+    height: 40px;
+  }
+
+  .home-image2 {
+    padding: 0;
+    display: flex;
+    width: 37px;
+  }
+
+  .home-image3 {
+    width: 45px;
+  }
+
+
+
+  .adminbtn {
+    width: 73px; 
+  }
+
+  
+  /*Right Section*/
+
+  .home-container2 {
+    width: 415px;
+  }  
+  .buybtn, .sellbtn {
+    
+    width: 76px;
+    height: 100%;
+  }
+  .buybtn-text, .sellbtn-text {
+    font-size: 15px;
+  }
+
+
+
+  /*Right Section*/
+
+  .home-container2 {
+    width: 415px;
+  }  
+  .buybtn, .sellbtn {
+    
+    width: 76px;
+    height: 100%;
+  }
+  .buybtn-text, .sellbtn-text {
+    font-size: 15px;
+  }
+  
+}
+
+@media(max-width: 550px) {
+
+  /*header*/
+  
+    .home-container1 {
+      margin-left: 15px;
+    }
+    #searchfield {
+      width: 100%;
+      padding-left: 40px;
+      
+    }
+  
+    #adminh2 {
+      font-size: 5vw;
+    }
+    #adminqa {
+      font-size: 3.5vw;
+    }
+    .popup {
+      width: 90vw;
+      height: 360px;
+    }
+  
+    #useroradmin {
+      left: 20px;
+      
+    }
+  
+    #userqabtn-icon {
+      margin-top: 10px;
+    }
+  
+    #adminqabtn-icon {
+      margin-top: 19px;
+      height: 10vw;
+    }
+  }  
+
+@media(max-width: 490px) {
+
+  /*Whole Header*/
+
+  
+  /*Left Section*/
+
+  .home-container1 {
+    margin-left: 20px;
+  }
+
+  .home-button {
+    width: 50px;
+    height: 55px;
+  
+  }
+  .home-image1 {
+    width: 90px;
+    height: 40px;
+  }
+
+  .home-image2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 40px;
+  }
+
+  /*Right Section*/
+
+  .home-container2 {
+    margin-left: 15px;
+  }
+  
+  
+  #searchfield {
+
+    margin-left: 22px;
+    padding-left: 30px;
+    width: 100%;
+    margin-left: 0px;
+    
+  }
+  .home-container2 {
+  
+    width: 350px;
+  }
+
+  .buybtn, .sellbtn {
+    
+    width: 66x;
+    height: 100%;
+  }
+
+  .buybtn-text, .sellbtn-text {
+    font-size: 15px;
+  }
+
+  .adminbtn {
+   display: none;
+   
+  }
+
+
+ 
+  
+}

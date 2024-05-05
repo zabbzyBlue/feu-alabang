@@ -78,7 +78,7 @@
    
     <!--Header Bar-->
     <div class="home-container">
-      <link href="./desktop-main.css" rel="stylesheet" />
+      <link href="./adminpage.css" rel="stylesheet" />
   
         <header data-role="Header" class="home-header">
           <!-- Left Section -->
@@ -91,23 +91,7 @@
 
           <!-- Right Section-->
           <div class="home-container2">
-            <div class="searcharea">
-              <span class="bi bi-search" id="searchicon"style="display:flex; width: 10px;position: relative; top: 53%; transform: translateY(-50%);"></span>
-              <input type="text" id="searchfield" placeholder="Search your pair..">
-            </div>
             
-            <button id="buybtn-id" class="buybtn button">
-              <span class="buybtn-text">
-                <span>BUY</span>
-                <br />
-              </span>
-            </button>
-            <button id="sellbtn-id" class="sellbtn button">
-              <span class="sellbtn-text">
-                <span>SELL</span>
-                <br />
-              </span>
-            </button>
             <button id="adminbtn-id" class="adminbtn button">
               <img alt="image" src="public/adminbtn.png" class="home-image3">
             </button>
@@ -117,78 +101,8 @@
     </div>
 
     <!-- Products -->
-    <div id="productbox">
-      <div class = "products1">
-        
-        <div class="gallerybtns"> 
-          <img class="leftbutton" src="public/leftarrow.png">
-          <img class="rightbutton" src="public/rightarrow.png">
-        </div>
-
-        <div class = "products">
-          <div> <img class="productimg" src="sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-      
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div> 
-      </div>
-
     
-
-      <div class = "products2">
-        <div class="gallerybtns"> 
-          <img class="leftbutton" src="public/leftarrow.png">
-          <img class="rightbutton" src="public/rightarrow.png">
-        </div>
-        <div class="gallerybtns"></div>
-        <div class = "products">
-          <div> <img class="productimg" src="sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-      
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div> 
-      </div>
-    </div>
+   
     <!-- ends here -->
 
     <script>
@@ -199,7 +113,7 @@
 
       homeButton.addEventListener('click', function() {
   
-        window.location.href = 'shop.html';
+        window.location.href = 'index.php';
       });
 
       const buyButton = document.getElementById('buybtn-id');
@@ -246,7 +160,7 @@
 
       const adminqabtn = document.getElementById('adminqabtn');
       adminqabtn.addEventListener('click', function() {
-        window.location.href = 'adminlogin.html';
+        window.location.href = 'index.php';
       });
 
     </script>

@@ -78,7 +78,7 @@
    
     <!--Header Bar-->
     <div class="home-container">
-      <link href="./desktop-main.css" rel="stylesheet" />
+      <link href="./adminlogin.css" rel="stylesheet" />
   
         <header data-role="Header" class="home-header">
           <!-- Left Section -->
@@ -117,76 +117,21 @@
     </div>
 
     <!-- Products -->
-    <div id="productbox">
-      <div class = "products1">
+    <div id="boxarea">
+      <div id="loginbox">
+        <h2 id="loginh2">Admin Login</h2>
+        <hr style="margin-bottom: 50px;">
+        <div id="login-dicators">
+          <p id="username-dicator">Username</p> 
+          <p id="password-dicator">Password</p>
+        </div>
+        <div id="login-fields">
+          <input type="text" id="loginfield"> <br>
+          <input type="password" id="passwordfield">
+        </div>
+        <button id="loginbtn"> Login</button>
+    </div>
         
-        <div class="gallerybtns"> 
-          <img class="leftbutton" src="public/leftarrow.png">
-          <img class="rightbutton" src="public/rightarrow.png">
-        </div>
-
-        <div class = "products">
-          <div> <img class="productimg" src="sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-      
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div> 
-      </div>
-
-    
-
-      <div class = "products2">
-        <div class="gallerybtns"> 
-          <img class="leftbutton" src="public/leftarrow.png">
-          <img class="rightbutton" src="public/rightarrow.png">
-        </div>
-        <div class="gallerybtns"></div>
-        <div class = "products">
-          <div> <img class="productimg" src="sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-      
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div>
-
-        <div class = "products">
-          <div> <img class = "productimg" src = "sneakers/asseterror.png"></div>
-          <div class = "product-detail">
-            <p class = "brandname">NIKE</p>
-            <p class = "productname">Zoom Vomero 5 'Iron Ore Flat Pewter'</p>
-            <p class = "productprice">&#8369; 9,895</p>
-          </div>
-        </div> 
       </div>
     </div>
     <!-- ends here -->
@@ -199,7 +144,7 @@
 
       homeButton.addEventListener('click', function() {
   
-        window.location.href = 'shop.html';
+        window.location.href = 'index.php';
       });
 
       const buyButton = document.getElementById('buybtn-id');
@@ -217,6 +162,15 @@
       });
 
       const adminButton = document.getElementById('adminbtn-id');
+
+      const loginButton = document.getElementById('loginbtn');
+      
+      loginButton.addEventListener('click', function() {
+        window.location.href = 'adminpage.php';
+      });
+
+
+
 
       
 
@@ -246,7 +200,7 @@
 
       const adminqabtn = document.getElementById('adminqabtn');
       adminqabtn.addEventListener('click', function() {
-        window.location.href = 'adminlogin.html';
+        window.location.href = 'adminlogin.php';
       });
 
     </script>
