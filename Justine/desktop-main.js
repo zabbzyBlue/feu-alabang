@@ -1,5 +1,6 @@
 
      
+     /*header*/
       const homeButton = document.getElementById('logobtn');
 
 
@@ -28,7 +29,7 @@
         var inputElement = document.getElementById("searchfield");
     
         // Check window width
-        if (window.innerWidth <= 370) { // 
+        if (window.innerWidth <= 370) { // Adjust 768 to your desired width
             inputElement.placeholder = "Search pair..";
         } else {
             inputElement.placeholder = "Search your pair..";
@@ -40,7 +41,6 @@
       
       // Add event listener for window resize event
       window.addEventListener("resize", changePlaceholder);
-
       
 
 
@@ -117,132 +117,42 @@
       });
 
       nextBtn3.addEventListener("click", ()=>{
-
-        if (window.innerWidth <= 380) {
+        if (window.innerWidth <= 860) {
           scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 380;
-        }
-
-        else if (window.innerWidth <= 450) {
+          scrollContainer1.scrollLeft += 850; // Adjust scroll value for smaller screens
+        } else {
           scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 445;
-        }
-
-        else if (window.innerWidth <= 750) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 740;
-        } 
-
-        else if (window.innerWidth <= 820) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 810;
-        } 
-        
-        else if (window.innerWidth <= 895) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 860;
-        } 
-        
-        else {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft += 880;
+          scrollContainer1.scrollLeft += 900;
         }
       });
 
       backBtn3.addEventListener("click", ()=>{
-        if (window.innerWidth <= 380) {
+        if (window.innerWidth <= 860) {
           scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 380;
-        }
-
-        else if (window.innerWidth <= 450) {
+          scrollContainer1.scrollLeft -= 850; // Adjust scroll value for smaller screens
+        } else {
           scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 445;
-        }
-
-        else if (window.innerWidth <= 750) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 740;
-        } 
-
-        else if (window.innerWidth <= 820) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 810;
-        } 
-        
-        else if (window.innerWidth <= 895) {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 860;
-        } 
-        
-        else {
-          scrollContainer1.style.scrollBehavior = "smooth";
-          scrollContainer1.scrollLeft -= 880;
+          scrollContainer1.scrollLeft -= 900;
         }
       });
 
       nextBtn4.addEventListener("click", ()=>{
-
-        if (window.innerWidth <= 380) {
+        if (window.innerWidth <= 860) {
           scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 380;
-        }
-
-        else if (window.innerWidth <= 450) {
+          scrollContainer2.scrollLeft += 850; // Adjust scroll value for smaller screens
+        } else {
           scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 445;
-        }
-
-        else if (window.innerWidth <= 750) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 740;
-        } 
-
-        else if (window.innerWidth <= 820) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 810;
-        } 
-        
-        else if (window.innerWidth <= 895) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 860;
-        } 
-        
-        else {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft += 880;
+          scrollContainer2.scrollLeft += 900;
         }
       });
 
       backBtn4.addEventListener("click", ()=>{
-        if (window.innerWidth <= 380) {
+        if (window.innerWidth <= 860) {
           scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 380;
-        }
-
-        else if (window.innerWidth <= 450) {
+          scrollContainer2.scrollLeft -= 850; // Adjust scroll value for smaller screens
+        } else {
           scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 445;
-        }
-
-        else if (window.innerWidth <= 750) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 740;
-        } 
-
-        else if (window.innerWidth <= 820) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 810;
-        } 
-        
-        else if (window.innerWidth <= 895) {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 860;
-        } 
-        
-        else {
-          scrollContainer2.style.scrollBehavior = "smooth";
-          scrollContainer2.scrollLeft -= 880;
+          scrollContainer2.scrollLeft -= 900;
         }
       });
 
