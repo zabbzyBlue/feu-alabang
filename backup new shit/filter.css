@@ -25,50 +25,16 @@
 }
 .header {
   display: flex;
-  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  height: 13vh;
   border-bottom: 1px solid #eee;
   color: #383838;
-}
-@media (max-width: 500px) {
-  .header {
-    height: 50vh;
-  }
-}
-#brandlabel-container {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  justify-content: center;
-  margin-top: 20px;
-}
-#brandlabel {
-  height: 40px;
-  font-size: 35px;
 }
 #btns {
   width: 100%;
   justify-content: center;
   display: flex;
-  height: 50px;
-  margin-top: 105px;
-}
-@media (max-width: 500px) {
-  #btns {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 90%;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 400px) {
-  #btns {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 90%;
-    margin-top: 50px;
-  }
 }
 .fil-p {
   padding: 0px 5px;
@@ -91,13 +57,6 @@
     margin: 0px 30px;
   }
 }
-@media (max-width: 500px) {
-  .fil-p {
-    margin: 10px;
-    margin-left: 30px;
-    padding: 15px 0px;
-  }
-}
 #root {
   width: 100%;
   display: grid;
@@ -110,12 +69,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 400px) {
-  #root {
-    padding: 15px;
-    margin-bottom: -50px;
-  }
-}
 .box {
   display: flex;
   flex-direction: column;
@@ -126,33 +79,12 @@
 .box:hover {
   cursor: pointer;
 }
-@media (max-width: 1000px) {
-  .box {
-    height: 95%;
-  }
-}
-@media (max-width: 400px) {
-  .box {
-    height: 60%;
-  }
-}
 .img-box {
   width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (max-width: 1000px) {
-  .img-box {
-    height: 250px;
-    min-width: 99%;
-  }
-}
-@media (max-width: 400px) {
-  .img-box {
-    width: 100%;
-  }
 }
 .images {
   height: 85%;
@@ -161,6 +93,11 @@
   object-fit: cover;
   object-position: center;
 }
+@media (max-width: 1000px) {
+  .images {
+    max-height: 67%;
+  }
+}
 @media (max-width: 800px) {
   .images {
     max-height: 90%;
@@ -168,24 +105,13 @@
 }
 @media (max-width: 650px) {
   .images {
-    max-height: 75%;
-  }
-}
-@media (max-width: 400px) {
-  .images {
-    height: 90%;
-    max-height: 90%;
+    max-height: 60%;
   }
 }
 .bottom {
   width: 100%;
   justify-content: space-between;
   height: 70px;
-}
-@media (max-width: 1000px) {
-  .bottom {
-    justify-content: start;
-  }
 }
 p.shoecategory {
   font-size: 12px;
