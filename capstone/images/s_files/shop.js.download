@@ -1,0 +1,22 @@
+var searchproduct = window.location.search;
+var searchparams = new URLSearchParams(searchproduct);
+console.log(searchparams);
+
+var searchfieldvalue = searchparams.get("searchproduct");
+console.log(searchfieldvalue);
+
+var searchfield = document.getElementById("searchfield");
+
+searchfield.value= searchfieldvalue;
+
+
+var searchlabel = document.getElementById("h3-searchlabel");
+searchlabel.value = searchfieldvalue;
+
+
+
+
+
+
+
+      
