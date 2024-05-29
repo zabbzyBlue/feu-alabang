@@ -1,0 +1,333 @@
+.shoesdetails-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  #second-div {
+    padding-left: 50px;
+  }
+}
+.shoesdetails-text {
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+@media (max-width: 995px) {
+  .shoesdetails-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .shoesdetails-text {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 580px) {
+  .shoesdetails-text {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .shoesdetails-text {
+    margin-left: -1.5px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 420px) {
+  .shoesdetails-text {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 395px) {
+  .shoesdetails-text {
+    margin-left: -22px;
+  }
+}
+@media (max-width: 376px) {
+  .shoesdetails-text {
+    margin-left: -28px;
+  }
+}
+@media (max-width: 376px) {
+  .shoesdetails-text {
+    font-size: 30px;
+    margin-left: -13px;
+  }
+}
+.shoesdetails-text1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .shoesdetails-text1 {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 175px;
+  }
+}
+@media (max-width: 580px) {
+  .shoesdetails-text1 {
+    margin-left: 148px;
+  }
+}
+@media (max-width: 500px) {
+  .shoesdetails-text1 {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 420px) {
+  .shoesdetails-text1 {
+    margin-left: 110px;
+  }
+}
+@media (max-width: 395px) {
+  .shoesdetails-text1 {
+    margin-left: 99px;
+  }
+}
+@media (max-width: 376px) {
+  .shoesdetails-text1 {
+    margin-left: 95px;
+  }
+}
+@media (max-width: 362px) {
+  .shoesdetails-text1 {
+    margin-left: 87px;
+  }
+}
+.shoesdetails-select {
+  width: 265px;
+  padding: 10px;
+  display: inline;
+  font-size: 18px;
+  border-color: #7e7e7e;
+  border-width: 1.5px;
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .shoesdetails-select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 82px;
+  }
+}
+@media (max-width: 580px) {
+  .shoesdetails-select {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .shoesdetails-select {
+    margin-left: 33px;
+  }
+}
+@media (max-width: 420px) {
+  .shoesdetails-select {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 395px) {
+  .shoesdetails-select {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .shoesdetails-select {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 362px) {
+  .shoesdetails-select {
+    margin-left: -5px;
+  }
+}
+.shoesdetails-button {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  padding-bottom: 5px;
+  width: 300px;
+  height: 40px;
+  font-weight: 700;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: #0bbab5;
+}
+@media (max-width: 767px) {
+  .shoesdetails-button {
+    margin-left: 65px;
+  }
+}
+@media (max-width: 580px) {
+  .shoesdetails-button {
+    margin-left: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .shoesdetails-button {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .shoesdetails-button {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 395px) {
+  .shoesdetails-button {
+    margin-left: -5px;
+  }
+}
+@media (max-width: 376px) {
+  .shoesdetails-button {
+    margin-left: -20px;
+  }
+}
+.slider {
+  width: 400px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .slider {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    width: 500px;
+    height: 450px;
+  }
+}
+@media (max-width: 633px) {
+  .slider {
+    height: 400px;
+    width: 458px;
+  }
+}
+@media (max-width: 500px) {
+  .slider {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (max-width: 362px) {
+  .slider {
+    height: 280px;
+    width: 330px;
+  }
+}
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider .list img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .slider .list img {
+    width: 350px;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .slider .list img {
+    width: 500px;
+    height: 100%;
+  }
+}
+@media (max-width: 633px) {
+  .slider .list img {
+    width: 465px;
+  }
+}
+@media (max-width: 500px) {
+  .slider .list img {
+    width: 350px;
+  }
+}
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 980px) {
+  .slider .buttons {
+    width: 100%;
+    top: 35%;
+    left: 0%;
+  }
+}
+@media (max-width: 767px) {
+  .slider .buttons {
+    width: 95%;
+    left: 2%;
+    top: 43%;
+  }
+}
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .slider .buttons button {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .slider .buttons button {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 362px) {
+  .slider .buttons button {
+    width: 40px;
+    height: 40px;
+  }
+}
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active {
+  width: 30px;
+}

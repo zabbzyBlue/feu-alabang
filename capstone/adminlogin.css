@@ -1,0 +1,290 @@
+
+/*Products Section*/
+#boxarea {
+
+  position: relative;
+  top: 10vh;
+  height: 120vh;
+  width: 100%;
+
+}
+
+#loginbox {
+  position: relative;
+  border: 2px solid black;
+  background-color: rgb(249, 249, 255);
+  left: 30vw;
+  height: 45vh;
+  width: 40%;
+
+}
+
+#loginh2 {
+  
+  text-align: center;
+  padding-top: 30px;
+}
+
+#login-dicators {
+
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-left: 130px;
+  height: 100px;
+  position: absolute;
+}
+
+  #username-dicator, #password-dicator {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  #password-dicator {
+    margin-left: 6px;
+  }
+
+#login-fields {
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 18vw;
+  height: 100px;
+  width: 190px;
+}  
+
+#loginfield, #passwordfield {
+  height: 50px;
+  border: 1px solid;
+}
+
+#loginbtn {
+  display: block;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  background-color: yellow;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  top: 25px;
+  left: 17vw;
+}
+
+
+
+
+
+@media(max-width: 1200px) {
+
+  .home-header {
+    height: 70px;
+  }
+
+  .home-container2 {
+    width: 490px;
+  }  
+
+  .buybtn-text, .sellbtn-text{
+    font-size: 15px;
+  }
+
+  .buybtn, .sellbtn {
+    width: 90px;
+  }
+
+}
+
+
+@media(max-width: 800px) {
+
+.home-header {
+  height: 65px;
+  padding: var(--dl-space-space-unit);
+}
+
+.home-button {
+  width: 100px;
+}
+
+.home-container2 {
+  width: 430px;
+}  
+
+.home-image3 {
+  width: 48px;
+}
+
+.buybtn, .sellbtn {
+  width: 150px;
+}
+
+.adminbtn {
+  width: 75px;
+}
+
+
+
+}
+
+@media(max-width: 610px) {
+
+  /*Whole*/
+
+  .home-header {
+    height: 60px;
+    padding: var(--dl-space-space-unit);
+  }
+
+  /*Left Section*/
+
+
+  .home-button {
+    width: 50px;
+    height: 43px;
+   
+  }
+
+  .home-image1 {
+    display: none;
+    width: 90px;
+    height: 40px;
+  }
+
+  .home-image2 {
+    padding: 0;
+    display: flex;
+    width: 37px;
+  }
+
+  .home-image3 {
+    width: 45px;
+  }
+
+
+  .adminbtn {
+    width: 73px; 
+  }
+
+  
+  /*Right Section*/
+
+  .home-container2 {
+    width: 415px;
+  }  
+  .buybtn, .sellbtn {
+    
+    width: 76px;
+    height: 100%;
+  }
+  .buybtn-text, .sellbtn-text {
+    font-size: 15px;
+  }
+
+ 
+}
+
+
+@media(max-width: 550px) {
+
+/*header*/
+
+  .home-container1 {
+    margin-left: 15px;
+  }
+  #searchfield {
+    width: 100%;
+    padding-left: 40px;
+    
+  }
+
+  #adminh2 {
+    font-size: 5vw;
+  }
+  #adminqa {
+    font-size: 3.5vw;
+  }
+  .popup {
+    width: 90vw;
+    height: 360px;
+  }
+
+  #useroradmin {
+    left: 20px;
+    
+  }
+
+  #userqabtn-icon {
+    margin-top: 10px;
+  }
+
+  #adminqabtn-icon {
+    margin-top: 19px;
+    height: 10vw;
+  }
+
+}
+@media(max-width: 490px) {
+
+  /*Whole Header*/
+
+  
+  /*Left Section*/
+
+  .home-container1 {
+    margin-left: 20px;
+  }
+
+  .home-button {
+    width: 50px;
+    height: 55px;
+  
+  }
+  .home-image1 {
+    width: 90px;
+    height: 40px;
+  }
+
+  .home-image2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 40px;
+  }
+
+  /*Right Section*/
+
+  .home-container2 {
+    margin-left: 15px;
+  }
+  
+  
+  #searchfield {
+
+    margin-left: 22px;
+    padding-left: 30px;
+    width: 100%;
+    margin-left: 0px;
+    
+  }
+  .home-container2 {
+  
+    width: 350px;
+  }
+
+  .buybtn, .sellbtn {
+    
+    width: 66x;
+    height: 100%;
+  }
+
+  .buybtn-text, .sellbtn-text {
+    font-size: 15px;
+  }
+
+  .adminbtn {
+   display: none;
+   
+  }
+
+ 
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta charset="utf-8" />
+    
+  
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+
+      }
+    </style>
+    <link 
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+   
+        <!--Header Bar-->
+        <link href="./headerbar.css" rel="stylesheet" />
+        <div class="home-container"> 
+
+            <header data-role="Header" class="home-header">
+            <!-- Left Section -->
+            <div class="home-container1">
+                <button id="logobtn" class="home-button button">
+                <img alt="image" src="public/homebtn-1.png" class="home-image1">
+                <img alt="image" src="public/homebtn-2.png" class="home-image2">
+                </button>
+            </div>
+
+            <!-- Right Section-->
+            <div class="home-container2">
+                <form method="get" action="shop.html" class="searcharea">
+                <span class="bi bi-search" id="searchicon"style="display:flex; width: 10px;position: relative; top: 53%; transform: translateY(-50%);"></span>
+                <input type="text" id="searchfield" name="search" placeholder="Search your pair..">
+                </form>  
+                
+                <button id="buybtn-id" class="buybtn button">
+                <span class="buybtn-text">
+                    <span>BUY</span>
+                    <br />
+                </span>
+                </button>
+                <button id="sellbtn-id" class="sellbtn button">
+                <span class="sellbtn-text">
+                    <span>SELL</span>
+                    <br />
+                </span>
+                </button>
+                <button id="adminbtn-id"a class="adminbtn button">
+                <img alt="image" src="public/adminbtn.png" class="home-image3">
+                </button>
+            </div>
+            </header>
+            <script type = "text/javascript" src="headerbar.js"></script>
+        </div>
+
+        <!----- Sell Section ------->
+        <link href="./selloffer.css" rel="stylesheet" />
+        
+        <div class="sell-header-container" >
+          <img src="public/sellheader.jpg" id="sell-header-container-img">
+        </div>
+        
+        <div class="sell-container">
+          <div class="container" id="sell-container-bs" style="max-width: 690px;">
+              <form action="connectdb_addoffer.php" method="POST" enctype="multipart/form-data">
+                  <p id="offer-p">Offer Brand-New Sneakers</p>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="label-p" id="productname-p">Product Name</p>
+                          <input type="text" class="input-field" name="productname" placeholder="Product Name" required>
+                      </div>
+                      <div class="col-md-6" style="margin-top: 50px;">
+                          <p class="label-p" id="brand-p">Brand</p>
+                          <select class="selections-menu" id="brand" name="brand" required>
+                              <option disabled selected>Select Brand</option>
+                              <option value="Nike">Nike</option>
+                              <option value="Adidas">Adidas</option>
+                              <option value="Converse">Converse</option>
+                              <option value="NewBalance">New Balance</option>
+                          </select>
+                      </div>
+  
+                      <div class="col-md-6" style="margin-top: 50px;">
+                          <p class="label-p" id="size-p">Size</p>
+                          <select class="selections-menu" id="size" name="size" required>
+                              <option disabled selected>Select Size</option>
+                              <option value="US W 5 / M 3.5">US W 5 / M 3.5</option>
+                              <option value="US W 5.5 / M 4">US W 5.5 / M 4</option>
+                              <option value="US W 6 / M 4.5">US W 6 / M 4.5</option>
+                              <option value="US W 6.5 / M 5">US W 6.5 / M 5</option>
+                              <option value="US W 7 / M 5.5">US W 7 / M 5.5</option>
+                              <option value="US W 7.5 / M 6">US W 7.5 / M 6</option>
+                              <option value="US W 8 / M 6.5">US W 8 / M 6.5</option>
+                              <option value="US W 8.5 / M 7">US W 8.5 / M 7</option>
+                              <option value="US W 9 / M 7.5">US W 9 / M 7.5</option>
+                              <option value="US W 9.5 / M 8">US W 9.5 / M 8</option>
+                              <option value="US W 10 / M 8.5">US W 10 / M 8.5</option>
+                              <option value="US W 10.5 / M 9">US W 10.5 / M 9</option>
+                              <option value="US W 11 / M 9.5">US W 11 / M 9.5</option>
+                              <option value="US W 11.5 / M 10">US W 11.5 / M 10</option>
+                              <option value="US W 12 / M 10.5">US W 12 / M 10.5</option>
+                              <option value="US W 12 / M 11">US W 12 / M 11</option>
+                              <option value="US M 11.5">US M 11.5</option>
+                              <option value="US M 12">US M 12</option>
+                              <option value="US M 12.5">US M 12.5</option>
+                              <option value="US M 13">US M 13</option>
+                          </select>
+                      </div>
+  
+                      <div class="col-md-12">
+                          <p class="label-p" id="priceoffer-p" style="margin-top: 50px;">Price Offer</p>
+                          <span class="currency-symbol">₱</span>
+                          <input type="text" class="input-field" id="input-field-id" name="priceoffer" required>
+                          <p id="shippingfeenote-p" style="color: red; margin-left: 20px; padding-top: 5px;">Note: Shipping fee excluded; to be shouldered by seller</p>
+                      </div>
+  
+                      <div class="col-md-12">
+                          <p class="label-p" id="images-header-p" style="margin-top: 50px;">Images</p>
+                          <p id="images-warning-p" style="margin-top: 20px;">Upload <b>portrait</b> images for better viewability. <b>Do not include name tags, IDs, shop logo brands, etc. on the images.</b> Non-compliance will lead to offer being rejected.</p>
+                      </div>
+  
+                      <!-- Image Upload Sections -->
+                      <!-- Right Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Right</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-right" class="preview-box"></div>
+                          <label for="upload-right" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-right" accept="image/*" class="file-input" name="right" required>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-right" class="preview-box">
+                              <img src="public/preview-right.png" id="preview1img-right">
+                          </div>
+                      </div>
+  
+                      <!-- Left Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Left</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-left" class="preview-box"></div>
+                          <label for="upload-left" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-left" accept="image/*" class="file-input" name="left" >
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-left" class="preview-box">
+                              <img src="public/preview-left.png" id="preview1img-left">
+                          </div>
+                      </div>
+  
+                      <!-- Back Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Back</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-back" class="preview-box"></div>
+                          <label for="upload-back" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-back" accept="image/*" class="file-input" name="back">
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-back" class="preview-box">
+                              <img src="public/preview-back.png" id="preview1img-back">
+                          </div>
+                      </div>
+  
+                      <!-- Top Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Top</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-top" class="preview-box"></div>
+                          <label for="upload-top" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-top" accept="image/*" class="file-input" name="top">
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-top" class="preview-box">
+                              <img src="public/preview-top.png" id="preview1img-top">
+                          </div>
+                      </div>
+  
+                      <!-- Outsole Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Outsole</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-outsole" class="preview-box"></div>
+                          <label for="upload-outsole" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-outsole" accept="image/*" class="file-input" name="outsole">
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-outsole" class="preview-box">
+                              <img src="public/preview-outsole.png" id="preview1img-outsole">
+                          </div>
+                      </div>
+  
+                      <!-- Size Tag Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Size Tag</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-sizetag" class="preview-box"></div>
+                          <label for="upload-sizetag" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-sizetag" accept="image/*" class="file-input" name="sizetag">
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-sizetag" class="preview-box">
+                              <img src="public/preview-sizetag.png" id="preview1img-sizetag">
+                          </div>
+                      </div>
+  
+                      <!-- Box Label Image -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="imagelabel-p" style="margin-top: 50px; margin-bottom: 30px;">Box Label</p>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Preview:</p>
+                          <div id="preview-boxlabel" class="preview-box"></div>
+                          <label for="upload-boxlabel" class="custom-file-upload btn btn-primary mt-3">Upload</label>
+                          <input type="file" id="upload-boxlabel" accept="image/*" class="file-input" name="boxlabel">
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-center">
+                          <p>Sample (in portrait):</p>
+                          <div id="preview1-boxlabel" class="preview-box">
+                              <img src="public/preview-boxlabel.png" id="preview1img-boxlabel">
+                          </div>
+                      </div>
+  
+                      <!-- Contact Information -->
+                      <div class="col-md-12">
+                          <p class="label-p" id="contact-header-p" style="margin-top: 50px;">Contact</p>
+                      </div>
+                      <div class="col-md-12" style="margin-top: 30px;">
+                          <p class="label-p" id="offerername-p">Full Name</p>
+                          <input type="text" class="input-field" name="offerername" placeholder="Enter full name.." required>
+                      </div>
+                      <div class="col-md-12" style="margin-top: 30px;">
+                          <p class="label-p" id="offerergcashno-p">Phone Number/G-Cash Number (For payout)</p>
+                          <input type="text" class="input-field" name="offerergcashno" placeholder="Enter G-Cash Number..." required>
+                      </div>
+                      <div class="col-md-12" style="margin-top: 30px;">
+                          <p class="label-p" id="offereremail-p">E-Mail Address</p>
+                          <input type="email" class="input-field" name="offereremail" placeholder="Enter E-Mail Address.." required>
+                      </div>
+  
+                      <!-- Guidelines -->
+                      <div class="col-md-12 d-flex justify-content-center">
+                          <p class="label-p" id="guidelines-p" style="margin-left: -30px; margin-top: 50px; margin-bottom: 30px;">Guidelines</p>
+                          <p></p>
+                      </div>
+                      <div class="col-md-12 d-flex justify-content-center" style="margin-left: -10px;">
+                          <p id="guidelines-warning-p">Upon offer request approval, you will be notified via email with instructions on how to proceed with sending your product. <br><br>The shipping fee will be shouldered by you. Upon receipt and approval of the request, the payout will be transferred to your G-cash account.<br><br>In the event that the product is deemed not authentic or presents any issues, you have the option to request its return.</p>
+                      </div>
+  
+                      <!-- Agreement Checkboxes -->
+                      <div class="col-md-12" style="margin-left: 10px; margin-top: 30px;">
+                          <div class="checkbox-container">
+                              <input type="checkbox" id="authenticity-checkbox" name="authenticity" required>
+                              <label for="authenticity-checkbox" class="checkbox-p">The item(s) included in the listing is 100% authentic</label>
+                          </div>
+                      </div>
+                      <div class="col-md-12" style="margin-left: 10px;">
+                          <div class="checkbox-container">
+                              <input type="checkbox" id="real-data-checkbox" name="real_data" required>
+                              <label for="real-data-checkbox" class="checkbox-p">All data including images given are real and correct</label>
+                          </div>
+                      </div>
+                      <div class="col-md-12" style="margin-left: 10px;">
+                          <div class="checkbox-container">
+                              <input type="checkbox" id="terms-checkbox" name="terms" required>
+                              <label for="terms-checkbox" class="checkbox-p">I agree to the Terms of Use</label>
+                          </div>
+                      </div>
+  
+                      <!-- Submit Button -->
+                      <div class="col-md-12 d-flex justify-content-center" style="margin-left: -15px; margin-top: 20px;">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+   <script type = "text/javascript" src="selloffer.js"></script>
+        <!----- Sell Section Ends Here------->
+        
+    </body>
+</html>
